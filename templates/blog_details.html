@@ -3,6 +3,9 @@
 {% block content %}
 
 <div>
+    <a href="{% url 'update_post' post.pk %}">+ edit</a> 
+    <br>
+    <a href="{% url 'delete_post' post.pk %}">- delete post</a>
     <h2>{{post.title}}</h2>
 
     <p>{{post.body}}</p>
