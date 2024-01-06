@@ -17,7 +17,9 @@
             <p><a href="{% url 'logout' %}">Log out</a></p>
         {% else %}
             <p>You are not Logged in</p>
-            <a href="{% url 'login' %}">Login</a>
+            <a href="{% url 'login' %}">Login</a> <br>
+            Or
+            <a href="{% url 'sign_up' %}">Sign Up</a> if you don't have an account yet.
         {% endif %}
     {% block content %}
 
